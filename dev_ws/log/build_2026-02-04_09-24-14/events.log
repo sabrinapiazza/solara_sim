@@ -1,0 +1,141 @@
+[0.000000] (-) TimerEvent: {}
+[0.005618] (solara_pkg) JobQueued: {'identifier': 'solara_pkg', 'dependencies': OrderedDict()}
+[0.008063] (solara_pkg) JobStarted: {'identifier': 'solara_pkg'}
+[0.096216] (-) TimerEvent: {}
+[0.163771] (solara_pkg) JobProgress: {'identifier': 'solara_pkg', 'progress': 'cmake'}
+[0.171462] (solara_pkg) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/solara_sim/dev_ws/src/solara_pkg', '-DCMAKE_INSTALL_PREFIX=/workspaces/solara_sim/dev_ws/install/solara_pkg'], 'cwd': '/workspaces/solara_sim/dev_ws/build/solara_pkg', 'env': OrderedDict({'DOCKER_BUILDKIT': '1', 'HOSTNAME': '931affba8b85', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/workspaces/solara_sim', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-33315f2a-43d8-4880-8cad-98f0ad6306cd.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-86371980-af22-44ac-892a-f682f103dd4e.sock', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'UV_USE_IO_URING': '0', 'PATH': '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-86371980-af22-44ac-892a-f682f103dd4e.sock"]', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-5063353175.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-86371980-af22-44ac-892a-f682f103dd4e.sock', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/solara_sim/dev_ws/build/solara_pkg', 'LC_ALL': 'C.UTF-8', 'COLCON': '1'}), 'shell': False}
+[0.212720] (-) TimerEvent: {}
+[0.314241] (-) TimerEvent: {}
+[0.415796] (-) TimerEvent: {}
+[0.518480] (-) TimerEvent: {}
+[0.622171] (-) TimerEvent: {}
+[0.723970] (-) TimerEvent: {}
+[0.827406] (-) TimerEvent: {}
+[0.930892] (-) TimerEvent: {}
+[1.035856] (-) TimerEvent: {}
+[1.137980] (-) TimerEvent: {}
+[1.240071] (-) TimerEvent: {}
+[1.344150] (-) TimerEvent: {}
+[1.446797] (-) TimerEvent: {}
+[1.549866] (-) TimerEvent: {}
+[1.654265] (-) TimerEvent: {}
+[1.758678] (-) TimerEvent: {}
+[1.861329] (-) TimerEvent: {}
+[1.968885] (-) TimerEvent: {}
+[2.073555] (-) TimerEvent: {}
+[2.166180] (solara_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[2.174267] (-) TimerEvent: {}
+[2.276043] (-) TimerEvent: {}
+[2.381798] (-) TimerEvent: {}
+[2.484823] (-) TimerEvent: {}
+[2.585834] (-) TimerEvent: {}
+[2.689201] (-) TimerEvent: {}
+[2.792826] (-) TimerEvent: {}
+[2.896248] (-) TimerEvent: {}
+[2.999909] (-) TimerEvent: {}
+[3.105998] (-) TimerEvent: {}
+[3.209614] (-) TimerEvent: {}
+[3.326703] (-) TimerEvent: {}
+[3.448756] (-) TimerEvent: {}
+[3.553894] (-) TimerEvent: {}
+[3.656844] (-) TimerEvent: {}
+[3.760817] (-) TimerEvent: {}
+[3.861965] (-) TimerEvent: {}
+[3.967258] (-) TimerEvent: {}
+[4.012743] (solara_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[4.068596] (-) TimerEvent: {}
+[4.169915] (-) TimerEvent: {}
+[4.273518] (-) TimerEvent: {}
+[4.357944] (solara_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.373882] (-) TimerEvent: {}
+[4.478080] (-) TimerEvent: {}
+[4.580880] (-) TimerEvent: {}
+[4.685815] (-) TimerEvent: {}
+[4.787153] (-) TimerEvent: {}
+[4.892939] (-) TimerEvent: {}
+[4.995178] (-) TimerEvent: {}
+[5.097078] (-) TimerEvent: {}
+[5.199936] (-) TimerEvent: {}
+[5.303048] (-) TimerEvent: {}
+[5.404888] (-) TimerEvent: {}
+[5.507857] (-) TimerEvent: {}
+[5.608912] (-) TimerEvent: {}
+[5.710057] (-) TimerEvent: {}
+[5.811991] (-) TimerEvent: {}
+[5.915965] (-) TimerEvent: {}
+[6.018170] (-) TimerEvent: {}
+[6.120826] (-) TimerEvent: {}
+[6.221776] (-) TimerEvent: {}
+[6.327691] (-) TimerEvent: {}
+[6.430091] (-) TimerEvent: {}
+[6.532264] (-) TimerEvent: {}
+[6.637112] (-) TimerEvent: {}
+[6.739844] (-) TimerEvent: {}
+[6.842838] (-) TimerEvent: {}
+[6.944887] (-) TimerEvent: {}
+[7.047767] (-) TimerEvent: {}
+[7.064462] (solara_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.110848] (solara_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.113574] (solara_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.116680] (solara_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.148769] (-) TimerEvent: {}
+[7.252837] (-) TimerEvent: {}
+[7.304345] (solara_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.353917] (-) TimerEvent: {}
+[7.455782] (-) TimerEvent: {}
+[7.556986] (-) TimerEvent: {}
+[7.657785] (-) TimerEvent: {}
+[7.759753] (-) TimerEvent: {}
+[7.862568] (-) TimerEvent: {}
+[7.965026] (-) TimerEvent: {}
+[8.067372] (-) TimerEvent: {}
+[8.170062] (-) TimerEvent: {}
+[8.273963] (-) TimerEvent: {}
+[8.375790] (-) TimerEvent: {}
+[8.480043] (-) TimerEvent: {}
+[8.582845] (-) TimerEvent: {}
+[8.684881] (-) TimerEvent: {}
+[8.788770] (-) TimerEvent: {}
+[8.890798] (-) TimerEvent: {}
+[8.991780] (-) TimerEvent: {}
+[9.092777] (-) TimerEvent: {}
+[9.194805] (-) TimerEvent: {}
+[9.297783] (-) TimerEvent: {}
+[9.401047] (-) TimerEvent: {}
+[9.517938] (-) TimerEvent: {}
+[9.620250] (-) TimerEvent: {}
+[9.646319] (solara_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.720923] (-) TimerEvent: {}
+[9.825464] (-) TimerEvent: {}
+[9.849415] (solara_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[9.854366] (solara_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.855470] (solara_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.926431] (-) TimerEvent: {}
+[10.014505] (solara_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[10.016253] (solara_pkg) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[10.019548] (solara_pkg) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[10.020453] (solara_pkg) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[10.023691] (solara_pkg) StderrLine: {'line': b'\n'}
+[10.027419] (-) TimerEvent: {}
+[10.031551] (solara_pkg) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[10.036920] (solara_pkg) StderrLine: {'line': b'  any of the following names:\n'}
+[10.047580] (solara_pkg) StderrLine: {'line': b'\n'}
+[10.052597] (solara_pkg) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[10.057062] (solara_pkg) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[10.058741] (solara_pkg) StderrLine: {'line': b'\n'}
+[10.067839] (solara_pkg) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[10.072829] (solara_pkg) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[10.079183] (solara_pkg) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[10.082536] (solara_pkg) StderrLine: {'line': b'  has been installed.\n'}
+[10.105799] (solara_pkg) StderrLine: {'line': b'\n'}
+[10.125443] (solara_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[10.150700] (-) TimerEvent: {}
+[10.155342] (solara_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[10.156459] (solara_pkg) CommandEnded: {'returncode': 1}
+[10.250878] (-) TimerEvent: {}
+[10.352011] (-) TimerEvent: {}
+[10.454808] (-) TimerEvent: {}
+[10.556791] (-) TimerEvent: {}
+[10.659210] (-) TimerEvent: {}
+[10.724494] (solara_pkg) JobEnded: {'identifier': 'solara_pkg', 'rc': 1}
+[10.740841] (-) EventReactorShutdown: {}

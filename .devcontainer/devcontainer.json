@@ -1,0 +1,23 @@
+{
+  "name": "ROS2 Jazzy Dev Container",
+  "image": "osrf/ros:jazzy-desktop",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools",
+        "ms-ament.vscode-ament",
+        "twxs.cmake"
+      ]
+    }
+  },
+  
+  "postCreateCommand": "sudo apt update && sudo apt install -y ros-jazzy-gazebo-ros-pkgs ros-jazzy-joint-state-publisher-gui ros-jazzy-xacro ros-jazzy-ros-gz-sim ros-jazzy-ros-gz-bridge",
+  
+  "remoteUser": "root"
+}

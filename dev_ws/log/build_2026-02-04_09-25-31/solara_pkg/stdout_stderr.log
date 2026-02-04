@@ -1,0 +1,46 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /workspaces/solara_sim/dev_ws/build/solara_pkg
+-- Install configuration: ""
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config/gz_bridge.yaml
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/gps.xacro
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/lidar.xacro
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/imu.xacro
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/thermal.xacro
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/ultrasonic.xacro
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/robot.urdf.xacro
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/wheels.xacro
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/gazebo.xacro
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/chassis.xacro
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/gazebo.launch.py
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/rviz.launch.py
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds/garden.sdf
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/package_run_dependencies/solara_pkg
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/parent_prefix_path/solara_pkg
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/ament_prefix_path.sh
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/ament_prefix_path.dsv
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/path.sh
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/path.dsv
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.bash
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.sh
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.zsh
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.dsv
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.dsv
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/packages/solara_pkg
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/cmake/solara_pkgConfig.cmake
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/cmake/solara_pkgConfig-version.cmake
+-- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.xml

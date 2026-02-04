@@ -1,0 +1,43 @@
+# Bridge topics from Gazebo to ROS2 and vice versa 
+
+# gz topic published by IMU plugin
+- ros_topic_name: "/imu"
+  gz_topic_name: "/imu"
+  ros_type_name: "sensor_msgs/msg/Imu"
+  gz_type_name: "gz.msgs.IMU"
+  direction: GZ_TO_ROS
+
+# Front Ultrasonic (Gazebo → ROS2)
+- ros_topic_name: "/ultrasonic"
+  gz_topic_name: "/ultrasonic"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+
+# Velocity commands (ROS2 → Gazebo)
+- ros_topic_name: "/cmd_vel"
+  gz_topic_name: "/cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+
+# Odometry (Gazebo → ROS2)
+- ros_topic_name: "/odom"
+  gz_topic_name: "/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+# Clock (Gazebo → ROS2)
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+  direction: GZ_TO_ROS
+
+
+
+  # GPS data
+  # Lidar data
+  # Thermal Sensor data
+  # Utrasonic Sensor data

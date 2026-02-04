@@ -1,0 +1,52 @@
+[0.189s] Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/solara_sim/dev_ws/src/solara_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/solara_sim/dev_ws/install/solara_pkg
+[0.464s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.853s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.297s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.757s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.786s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.787s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.790s] -- Added test 'lint_cmake' to check CMake code style
+[2.793s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.808s] -- Added test 'xmllint' to check XML markup files
+[2.828s] -- Configuring done (2.5s)
+[2.929s] -- Generating done (0.1s)
+[2.968s] -- Build files have been written to: /workspaces/solara_sim/dev_ws/build/solara_pkg
+[2.994s] Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/solara_sim/dev_ws/src/solara_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/solara_sim/dev_ws/install/solara_pkg
+[3.009s] Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/solara_sim/dev_ws/build/solara_pkg -- -j8 -l8
+[3.532s] Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/solara_sim/dev_ws/build/solara_pkg -- -j8 -l8
+[3.648s] Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/solara_sim/dev_ws/build/solara_pkg
+[3.763s] -- Install configuration: ""
+[3.765s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config
+[3.768s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config/gz_bridge.yaml
+[3.773s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description
+[3.774s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors
+[3.776s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/gps.xacro
+[3.778s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/lidar.xacro
+[3.780s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/imu.xacro
+[3.783s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/thermal.xacro
+[3.785s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/ultrasonic.xacro
+[3.787s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/robot.urdf.xacro
+[3.790s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/wheels.xacro
+[3.792s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/gazebo.xacro
+[3.794s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/chassis.xacro
+[3.797s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch
+[3.799s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/gazebo.launch.py
+[3.802s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/rviz.launch.py
+[3.806s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds
+[3.809s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds/garden.sdf
+[3.813s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/package_run_dependencies/solara_pkg
+[3.816s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/parent_prefix_path/solara_pkg
+[3.819s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/ament_prefix_path.sh
+[3.821s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/ament_prefix_path.dsv
+[3.823s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/path.sh
+[3.825s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/path.dsv
+[3.828s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.bash
+[3.830s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.sh
+[3.832s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.zsh
+[3.835s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.dsv
+[3.836s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.dsv
+[3.840s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/packages/solara_pkg
+[3.843s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/cmake/solara_pkgConfig.cmake
+[3.846s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/cmake/solara_pkgConfig-version.cmake
+[3.848s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.xml
+[3.865s] Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/solara_sim/dev_ws/build/solara_pkg

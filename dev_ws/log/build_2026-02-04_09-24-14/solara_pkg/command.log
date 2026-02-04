@@ -1,0 +1,2 @@
+Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': /usr/bin/cmake /workspaces/solara_sim/dev_ws/src/solara_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/solara_sim/dev_ws/install/solara_pkg
+Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '1': /usr/bin/cmake /workspaces/solara_sim/dev_ws/src/solara_pkg -DCMAKE_INSTALL_PREFIX=/workspaces/solara_sim/dev_ws/install/solara_pkg

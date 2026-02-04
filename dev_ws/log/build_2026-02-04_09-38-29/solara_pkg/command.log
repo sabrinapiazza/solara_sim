@@ -1,0 +1,4 @@
+Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/solara_sim/dev_ws/build/solara_pkg -- -j8 -l8
+Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/solara_sim/dev_ws/build/solara_pkg -- -j8 -l8
+Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/solara_sim/dev_ws/build/solara_pkg
+Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/solara_sim/dev_ws/build/solara_pkg

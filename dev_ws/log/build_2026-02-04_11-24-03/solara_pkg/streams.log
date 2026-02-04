@@ -1,0 +1,38 @@
+[0.485s] Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/solara_sim/dev_ws/build/solara_pkg -- -j8 -l8
+[1.792s] Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/solara_sim/dev_ws/build/solara_pkg -- -j8 -l8
+[1.966s] Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/solara_sim/dev_ws/build/solara_pkg
+[2.105s] -- Install configuration: ""
+[2.114s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config
+[2.117s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config/gz_bridge.yaml
+[2.118s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description
+[2.118s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors
+[2.119s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/gps.xacro
+[2.127s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/lidar.xacro
+[2.129s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/imu.xacro
+[2.130s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/thermal.xacro
+[2.131s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/ultrasonic.xacro
+[2.133s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/robot.urdf.xacro
+[2.140s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/wheels.xacro
+[2.141s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/gazebo.xacro
+[2.145s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/chassis.xacro
+[2.147s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch
+[2.148s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/gazebo.launch.py
+[2.148s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/rviz.launch.py
+[2.149s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds
+[2.150s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds/garden.sdf
+[2.152s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/package_run_dependencies/solara_pkg
+[2.153s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/parent_prefix_path/solara_pkg
+[2.154s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/ament_prefix_path.sh
+[2.155s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/ament_prefix_path.dsv
+[2.155s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/path.sh
+[2.156s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/environment/path.dsv
+[2.157s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.bash
+[2.158s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.sh
+[2.160s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.zsh
+[2.162s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/local_setup.dsv
+[2.163s] -- Installing: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.dsv
+[2.168s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/packages/solara_pkg
+[2.169s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/cmake/solara_pkgConfig.cmake
+[2.171s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/cmake/solara_pkgConfig-version.cmake
+[2.173s] -- Up-to-date: /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.xml
+[2.193s] Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/solara_sim/dev_ws/build/solara_pkg

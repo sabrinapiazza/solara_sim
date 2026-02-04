@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<robot name="garden_rover" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Define wheel positions -->
+  <xacro:property name="front_wheel_x" value="0.2286"/>
+  <xacro:property name="rear_wheel_x" value="-0.2286"/>
+
+  <xacro:include filename="$(find solara_pkg)/description/chassis.xacro"/>
+  <xacro:include filename="$(find solara_pkg)/description/wheels.xacro"/>
+  <xacro:include filename="$(find solara_pkg)/description/gazebo.xacro"/>
+  <xacro:include filename="$(find solara_pkg)/description/sensors/imu.xacro"/>
+  <xacro:include filename="$(find solara_pkg)/description/sensors/ultrasonic.xacro"/>
+  <xacro:include filename="$(find solara_pkg)/description/sensors/gps.xacro"/>
+  
+
+
+  <!-- Assemble the robot: 2 driven + 4 passive wheels -->
+  <xacro:driven_wheel prefix="middle_left" reflect_y="1"/>
+  <xacro:driven_wheel prefix="middle_right" reflect_y="-1"/>
+    
+  <xacro:passive_wheel prefix="front_left" reflect_y="1" x_position="${front_wheel_x}"/>
+  <xacro:passive_wheel prefix="front_right" reflect_y="-1" x_position="${front_wheel_x}"/>
+  <xacro:passive_wheel prefix="rear_left" reflect_y="1" x_position="${rear_wheel_x}"/>
+  <xacro:passive_wheel prefix="rear_right" reflect_y="-1" x_position="${rear_wheel_x}"/>
+
+  <xacro:imu_sensor parent_link="base_link">
+    <origin xyz="0.3048 0 0.0862" rpy="0 0 0"/> 
+  </xacro:imu_sensor>
+
+  <xacro:ultrasonic_sensor parent_link="base_link">
+    <origin xyz="0.3148 0 0.0762" rpy="0 0 0"/>  <!-- Front edge, pointing forward -->
+  </xacro:ultrasonic_sensor>
+
+  <!-- GPS (front-left of chassis, leaving center for LiDAR) -->
+  <xacro:gps_sensor parent_link="base_link">
+    <origin xyz="0.2 0.1 0.0862" rpy="0 0 0"/>  
+  </xacro:gps_sensor>
+
+  <!-- add your lidar tag here -->
+
+</robot>
