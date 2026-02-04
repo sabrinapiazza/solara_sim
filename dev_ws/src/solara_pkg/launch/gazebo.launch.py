@@ -34,7 +34,7 @@ def generate_launch_description():
                 'gz_sim.launch.py'
             ])
         ]),
-        launch_arguments={'gz_args': '-r -s empty.sdf'}.items()
+        launch_arguments={'gz_args': '-r empty.sdf'}.items()
         # SABRINA REMOVE -s before commit
     )
 
