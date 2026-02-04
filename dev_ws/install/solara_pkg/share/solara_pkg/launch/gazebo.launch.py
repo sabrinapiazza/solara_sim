@@ -3,7 +3,9 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import PathJoinSubstitution
 from launch_ros.actions import Node
+from launch_ros.substitutions import FindPackageShare
 import xacro
 
 def generate_launch_description():
@@ -15,6 +17,8 @@ def generate_launch_description():
     # Path to xacro file
     xacro_file = os.path.join(pkg_share, 'description', 'robot.urdf.xacro')
     bridge_config = os.path.join(pkg_share, 'config', 'gz_bridge.yaml')
+    # world_file = os.path.join(pkg_share, 'worlds', 'garden.sdf')
+
 
     
     # Process xacro to get robot description
@@ -30,8 +34,8 @@ def generate_launch_description():
                 'gz_sim.launch.py'
             ])
         ]),
-        world_file = os.path.join(pkg_share, 'worlds', 'garden.sdf'),
-        launch_arguments={'gz_args': '-r empty.sdf'}.items()
+        launch_arguments={'gz_args': '-r -s empty.sdf'}.items()
+        # SABRINA REMOVE -s before commit
     )
 
     # Robot State Publisher

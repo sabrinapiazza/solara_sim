@@ -1,0 +1,139 @@
+[0.773s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'solara_pkg']
+[0.778s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['solara_pkg'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ffffe1c0a10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ffffe1c0680>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ffffe1c0680>>, mixin_verb=('build',))
+[1.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.149s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[1.151s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[1.152s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[1.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.155s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/solara_sim/dev_ws'
+[1.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.293s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.294s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.294s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.296s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.297s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.298s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.301s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.302s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.302s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.303s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.305s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.306s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/solara_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/solara_pkg) by extension 'ignore'
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/solara_pkg) by extension 'ignore_ament_install'
+[1.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/solara_pkg) by extensions ['colcon_pkg']
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/solara_pkg) by extension 'colcon_pkg'
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/solara_pkg) by extensions ['colcon_meta']
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/solara_pkg) by extension 'colcon_meta'
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/solara_pkg) by extensions ['ros']
+[1.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/solara_pkg) by extension 'ros'
+[1.332s] DEBUG:colcon.colcon_core.package_identification:Package 'src/solara_pkg' with type 'ros.ament_cmake' and name 'solara_pkg'
+[1.333s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.333s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.333s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.333s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.333s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.413s] Level 5:colcon.colcon_core.verb:set package 'solara_pkg' build argument 'cmake_args' from command line to 'None'
+[1.415s] Level 5:colcon.colcon_core.verb:set package 'solara_pkg' build argument 'cmake_target' from command line to 'None'
+[1.415s] Level 5:colcon.colcon_core.verb:set package 'solara_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'solara_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'solara_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'solara_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[1.416s] Level 5:colcon.colcon_core.verb:set package 'solara_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[1.417s] Level 5:colcon.colcon_core.verb:set package 'solara_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.417s] Level 5:colcon.colcon_core.verb:set package 'solara_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.417s] DEBUG:colcon.colcon_core.verb:Building package 'solara_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/solara_sim/dev_ws/build/solara_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/solara_sim/dev_ws/install/solara_pkg', 'merge_install': False, 'path': '/workspaces/solara_sim/dev_ws/src/solara_pkg', 'symlink_install': False, 'test_result_base': None}
+[1.417s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.429s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.432s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/solara_sim/dev_ws/src/solara_pkg' with build type 'ament_cmake'
+[1.435s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/solara_sim/dev_ws/src/solara_pkg'
+[1.447s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.447s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.448s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/solara_sim/dev_ws/build/solara_pkg -- -j8 -l8
+[2.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/solara_sim/dev_ws/build/solara_pkg -- -j8 -l8
+[2.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/solara_sim/dev_ws/build/solara_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/solara_sim/dev_ws/build/solara_pkg
+[2.923s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(solara_pkg)
+[2.928s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/solara_sim/dev_ws/build/solara_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/solara_sim/dev_ws/build/solara_pkg
+[2.942s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg' for CMake module files
+[2.957s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg' for CMake config files
+[2.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('solara_pkg', 'cmake_prefix_path')
+[2.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/hook/cmake_prefix_path.ps1'
+[2.972s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/hook/cmake_prefix_path.dsv'
+[2.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/hook/cmake_prefix_path.sh'
+[2.982s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg/bin'
+[2.983s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg/lib/pkgconfig/solara_pkg.pc'
+[2.992s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg/lib/python3.12/site-packages'
+[2.995s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg/bin'
+[2.998s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.ps1'
+[3.005s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.dsv'
+[3.009s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.sh'
+[3.012s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.bash'
+[3.014s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.zsh'
+[3.017s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/solara_sim/dev_ws/install/solara_pkg/share/colcon-core/packages/solara_pkg)
+[3.021s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(solara_pkg)
+[3.022s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg' for CMake module files
+[3.038s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg' for CMake config files
+[3.048s] Level 1:colcon.colcon_core.shell:create_environment_hook('solara_pkg', 'cmake_prefix_path')
+[3.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/hook/cmake_prefix_path.ps1'
+[3.053s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/hook/cmake_prefix_path.dsv'
+[3.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/hook/cmake_prefix_path.sh'
+[3.066s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg/bin'
+[3.069s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg/lib/pkgconfig/solara_pkg.pc'
+[3.071s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg/lib/python3.12/site-packages'
+[3.073s] Level 1:colcon.colcon_core.environment:checking '/workspaces/solara_sim/dev_ws/install/solara_pkg/bin'
+[3.075s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.ps1'
+[3.080s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.dsv'
+[3.084s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.sh'
+[3.088s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.bash'
+[3.097s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/package.zsh'
+[3.100s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/solara_sim/dev_ws/install/solara_pkg/share/colcon-core/packages/solara_pkg)
+[3.105s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.107s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.108s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.109s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.206s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.208s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.209s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.211s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.221s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[3.222s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.224s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/solara_sim/dev_ws/install/local_setup.ps1'
+[3.232s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/solara_sim/dev_ws/install/_local_setup_util_ps1.py'
+[3.249s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/solara_sim/dev_ws/install/setup.ps1'
+[3.281s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/solara_sim/dev_ws/install/local_setup.sh'
+[3.304s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/solara_sim/dev_ws/install/_local_setup_util_sh.py'
+[3.338s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/solara_sim/dev_ws/install/setup.sh'
+[3.363s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/solara_sim/dev_ws/install/local_setup.bash'
+[3.374s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/solara_sim/dev_ws/install/setup.bash'
+[3.389s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/solara_sim/dev_ws/install/local_setup.zsh'
+[3.398s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/solara_sim/dev_ws/install/setup.zsh'

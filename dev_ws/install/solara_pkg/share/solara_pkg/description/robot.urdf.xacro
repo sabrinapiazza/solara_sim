@@ -7,10 +7,10 @@
 
   <xacro:include filename="$(find solara_pkg)/description/chassis.xacro"/>
   <xacro:include filename="$(find solara_pkg)/description/wheels.xacro"/>
-  <xacro:include filename="$(find solara_pkg)/description/gazebo.xacro"/>
   <xacro:include filename="$(find solara_pkg)/description/sensors/imu.xacro"/>
   <xacro:include filename="$(find solara_pkg)/description/sensors/ultrasonic.xacro"/>
   <xacro:include filename="$(find solara_pkg)/description/sensors/gps.xacro"/>
+  <xacro:include filename="$(find solara_pkg)/description/gazebo.xacro"/>
   
 
 
@@ -23,6 +23,7 @@
   <xacro:passive_wheel prefix="rear_left" reflect_y="1" x_position="${rear_wheel_x}"/>
   <xacro:passive_wheel prefix="rear_right" reflect_y="-1" x_position="${rear_wheel_x}"/>
 
+
   <xacro:imu_sensor parent_link="base_link">
     <origin xyz="0.3048 0 0.0862" rpy="0 0 0"/> 
   </xacro:imu_sensor>
@@ -34,7 +35,9 @@
   <!-- GPS (front-left of chassis, leaving center for LiDAR) -->
   <xacro:gps_sensor parent_link="base_link">
     <origin xyz="0.2 0.1 0.0862" rpy="0 0 0"/>  
-  </xacro:gps_sensor>
+  </xacro:gps_sensor> 
+
+
 
   <!-- add your lidar tag here -->
 

@@ -14,6 +14,13 @@
   gz_type_name: "gz.msgs.LaserScan"
   direction: GZ_TO_ROS
 
+  # Front GPS (Gazebo → ROS2)
+- ros_topic_name: "/gps/fix"
+  gz_topic_name: "/gps/fix"
+  ros_type_name: "sensor_msgs/msg/NavSatFix"
+  gz_type_name: "gz.msgs.NavSat"
+  direction: GZ_TO_ROS
+
 # Velocity commands (ROS2 → Gazebo)
 - ros_topic_name: "/cmd_vel"
   gz_topic_name: "/cmd_vel"
@@ -34,10 +41,6 @@
   ros_type_name: "rosgraph_msgs/msg/Clock"
   gz_type_name: "gz.msgs.Clock"
   direction: GZ_TO_ROS
-
-
-
-  # GPS data
+  
   # Lidar data
-  # Thermal Sensor data
-  # Utrasonic Sensor data
+ 

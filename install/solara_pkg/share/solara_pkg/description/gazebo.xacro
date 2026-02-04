@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Chassis - Pink -->
+    <gazebo reference="base_link">
+        <visual>
+            <material>
+                <ambient>1.0 0.4 0.7 1.0</ambient>
+                <diffuse>1.0 0.4 0.7 1.0</diffuse>
+                <specular>0.8 0.8 0.8 1.0</specular>
+            </material>
+        </visual>
+    </gazebo>
+
+    <!-- Driven Wheels - Lavender -->
+    <gazebo reference="middle_left_wheel">
+        <visual>
+            <material>
+                <ambient>0.7 0.5 0.9 1.0</ambient>
+                <diffuse>0.7 0.5 0.9 1.0</diffuse>
+            </material>
+        </visual>
+    </gazebo>
+
+    <gazebo reference="middle_right_wheel">
+        <visual>
+            <material>
+                <ambient>0.7 0.5 0.9 1.0</ambient>
+                <diffuse>0.7 0.5 0.9 1.0</diffuse>
+            </material>
+        </visual>
+    </gazebo>
+
+    <!-- Passive Wheels - Mint Green -->
+    <gazebo reference="front_left_wheel">
+        <visual>
+            <material>
+                <ambient>0.6 0.9 0.7 1.0</ambient>
+                <diffuse>0.6 0.9 0.7 1.0</diffuse>
+            </material>
+        </visual>
+    </gazebo>
+
+    <gazebo reference="front_right_wheel">
+        <visual>
+            <material>
+                <ambient>0.6 0.9 0.7 1.0</ambient>
+                <diffuse>0.6 0.9 0.7 1.0</diffuse>
+            </material>
+        </visual>
+    </gazebo>
+
+    <gazebo reference="rear_left_wheel">
+        <visual>
+            <material>
+                <ambient>0.6 0.9 0.7 1.0</ambient>
+                <diffuse>0.6 0.9 0.7 1.0</diffuse>
+            </material>
+        </visual>
+    </gazebo>
+
+    <gazebo reference="rear_right_wheel">
+        <visual>
+            <material>
+                <ambient>0.6 0.9 0.7 1.0</ambient>
+                <diffuse>0.6 0.9 0.7 1.0</diffuse>
+            </material>
+        </visual>
+    </gazebo>
+
+    <!-- Gazebo Harmonic Diff Drive Plugin -->
+    <gazebo>
+        <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+            <left_joint>middle_left_wheel_joint</left_joint>
+            <right_joint>middle_right_wheel_joint</right_joint>
+
+            <wheel_separation>0.304</wheel_separation>
+            <wheel_radius>0.075</wheel_radius>
+
+            <odom_publish_frequency>50</odom_publish_frequency>
+            <topic>cmd_vel</topic>
+            <odom_topic>odometry</odom_topic>
+            <frame_id>odom</frame_id>
+            
+            <child_frame_id>base_link</child_frame_id>
+        </plugin>
+    </gazebo>
+
+      <!-- IMU Sensor Gazebo Configuration -->
+    <gazebo reference="base_link">
+        <sensor name="imu_sensor" type="imu">
+            <always_on>true</always_on>
+            <update_rate>100</update_rate>
+            <topic>imu</topic>
+            <imu>
+                <angular_velocity>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>0.0002</stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>0.0002</stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>0.0002</stddev>
+                        </noise>
+                    </z>
+                </angular_velocity>
+                <linear_acceleration>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>0.017</stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>0.017</stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>0.017</stddev>
+                        </noise>
+                    </z>
+                </linear_acceleration>
+            </imu>
+        </sensor>
+    </gazebo>
+
+    <gazebo reference="base_link">
+        <sensor name="ultrasonic" type="ray">
+        <always_on>true</always_on>
+        <update_rate>40</update_rate>
+        <visualize>true</visualize>
+        <topic>ultrasonic</topic>
+        <ray>
+            <scan>
+                <horizontal>
+                    <samples>5</samples>
+                    <resolution>1</resolution>
+                    <min_angle>-0.13</min_angle>  <!-- ~15° beam width -->
+                    <max_angle>0.13</max_angle>
+                </horizontal>
+            </scan>
+            <range>
+                <min>0.02</min>   <!-- 2cm minimum (HC-SR04 spec) -->
+                <max>4.0</max>    <!-- 4m maximum (HC-SR04 spec) -->
+                <resolution>0.01</resolution>  <!-- 1cm resolution -->
+            </range>
+            <noise>
+                <type>gaussian</type>
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>  <!-- 1cm standard deviation -->
+            </noise>
+        </ray>
+        </sensor>
+    </gazebo>
+
+
+    <gazebo reference="base_link">
+        <sensor name="gps_sensor" type="navsat">
+            <always_on>true</always_on>
+            <update_rate>10</update_rate>
+            <topic>gps/fix</topic>
+            
+            <navsat>
+                <position_sensing>
+                    <horizontal>
+                        <!-- 0.5m accuracy (better than standard NEO-M8N) -->
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>0.5</stddev>
+                        </noise>
+                    </horizontal>
+                    <vertical>
+                        <!-- 1.5m vertical (still worse than horizontal) -->
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.5</stddev>
+                        </noise>
+                    </vertical>
+                </position_sensing>
+                
+                <velocity_sensing>
+                    <horizontal>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>0.1</stddev>
+                        </noise>
+                    </horizontal>
+                    <vertical>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>0.15</stddev>
+                        </noise>
+                    </vertical>
+                </velocity_sensing>
+            </navsat>
+        </sensor>
+    </gazebo>
+
+</robot>

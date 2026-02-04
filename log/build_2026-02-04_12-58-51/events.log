@@ -1,0 +1,248 @@
+[0.000000] (-) TimerEvent: {}
+[0.007017] (solara_pkg) JobQueued: {'identifier': 'solara_pkg', 'dependencies': OrderedDict()}
+[0.014367] (solara_pkg) JobStarted: {'identifier': 'solara_pkg'}
+[0.568542] (-) TimerEvent: {}
+[0.675947] (-) TimerEvent: {}
+[0.778294] (-) TimerEvent: {}
+[0.784956] (solara_pkg) JobProgress: {'identifier': 'solara_pkg', 'progress': 'cmake'}
+[0.807544] (solara_pkg) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/solara_sim/dev_ws/src/solara_pkg', '-DCMAKE_INSTALL_PREFIX=/workspaces/solara_sim/install/solara_pkg'], 'cwd': '/workspaces/solara_sim/build/solara_pkg', 'env': OrderedDict({'DOCKER_BUILDKIT': '1', 'PYTHON_BASIC_REPL': '1', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': '931affba8b85', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-ca4345b1-9851-40f4-b544-6e0f966db011.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-70f8ff46-c095-42c9-9d24-d67deb81af43.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'UV_USE_IO_URING': '0', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-70f8ff46-c095-42c9-9d24-d67deb81af43.sock"]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-eb882cbef6d0442d.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/58fe105966acf628ca31c6d129db14ec/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-064641725f.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-70f8ff46-c095-42c9-9d24-d67deb81af43.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/solara_sim/build/solara_pkg', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.058656] (-) TimerEvent: {}
+[1.161878] (-) TimerEvent: {}
+[1.268266] (-) TimerEvent: {}
+[1.371297] (-) TimerEvent: {}
+[1.515321] (-) TimerEvent: {}
+[1.623639] (-) TimerEvent: {}
+[1.746637] (-) TimerEvent: {}
+[1.849930] (-) TimerEvent: {}
+[1.955951] (-) TimerEvent: {}
+[2.059379] (-) TimerEvent: {}
+[2.161116] (-) TimerEvent: {}
+[2.268324] (-) TimerEvent: {}
+[2.372029] (-) TimerEvent: {}
+[2.475045] (-) TimerEvent: {}
+[2.577087] (-) TimerEvent: {}
+[2.681143] (-) TimerEvent: {}
+[2.785923] (-) TimerEvent: {}
+[2.888565] (-) TimerEvent: {}
+[2.991351] (-) TimerEvent: {}
+[3.093428] (-) TimerEvent: {}
+[3.197166] (-) TimerEvent: {}
+[3.299763] (-) TimerEvent: {}
+[3.402458] (-) TimerEvent: {}
+[3.509981] (-) TimerEvent: {}
+[3.612046] (-) TimerEvent: {}
+[3.714015] (-) TimerEvent: {}
+[3.816197] (-) TimerEvent: {}
+[3.920028] (-) TimerEvent: {}
+[4.025025] (-) TimerEvent: {}
+[4.045261] (solara_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[4.126805] (-) TimerEvent: {}
+[4.233172] (-) TimerEvent: {}
+[4.335009] (-) TimerEvent: {}
+[4.437036] (-) TimerEvent: {}
+[4.539968] (-) TimerEvent: {}
+[4.642510] (-) TimerEvent: {}
+[4.746902] (-) TimerEvent: {}
+[4.850985] (-) TimerEvent: {}
+[4.952994] (-) TimerEvent: {}
+[5.054957] (-) TimerEvent: {}
+[5.158157] (-) TimerEvent: {}
+[5.261237] (-) TimerEvent: {}
+[5.364720] (-) TimerEvent: {}
+[5.404935] (solara_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[5.465241] (-) TimerEvent: {}
+[5.567939] (-) TimerEvent: {}
+[5.669838] (-) TimerEvent: {}
+[5.680849] (solara_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.770952] (-) TimerEvent: {}
+[5.872917] (-) TimerEvent: {}
+[5.976882] (-) TimerEvent: {}
+[6.078888] (-) TimerEvent: {}
+[6.181797] (-) TimerEvent: {}
+[6.284932] (-) TimerEvent: {}
+[6.387976] (-) TimerEvent: {}
+[6.490553] (-) TimerEvent: {}
+[6.591949] (-) TimerEvent: {}
+[6.694007] (-) TimerEvent: {}
+[6.795894] (-) TimerEvent: {}
+[6.899054] (-) TimerEvent: {}
+[7.004270] (-) TimerEvent: {}
+[7.111943] (-) TimerEvent: {}
+[7.215467] (-) TimerEvent: {}
+[7.318981] (-) TimerEvent: {}
+[7.470872] (-) TimerEvent: {}
+[7.579967] (-) TimerEvent: {}
+[7.685555] (-) TimerEvent: {}
+[7.787785] (-) TimerEvent: {}
+[7.889959] (-) TimerEvent: {}
+[7.991986] (-) TimerEvent: {}
+[8.094954] (-) TimerEvent: {}
+[8.197244] (-) TimerEvent: {}
+[8.301952] (-) TimerEvent: {}
+[8.405011] (-) TimerEvent: {}
+[8.508183] (-) TimerEvent: {}
+[8.609932] (-) TimerEvent: {}
+[8.712916] (-) TimerEvent: {}
+[8.815190] (-) TimerEvent: {}
+[8.827402] (solara_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.912202] (solara_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[8.917674] (-) TimerEvent: {}
+[8.918696] (solara_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.921462] (solara_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[9.018903] (-) TimerEvent: {}
+[9.121094] (-) TimerEvent: {}
+[9.177358] (solara_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.221967] (-) TimerEvent: {}
+[9.325386] (-) TimerEvent: {}
+[9.426945] (-) TimerEvent: {}
+[9.529927] (-) TimerEvent: {}
+[9.630965] (-) TimerEvent: {}
+[9.731894] (-) TimerEvent: {}
+[9.835915] (-) TimerEvent: {}
+[9.937929] (-) TimerEvent: {}
+[10.038879] (-) TimerEvent: {}
+[10.140882] (-) TimerEvent: {}
+[10.242020] (-) TimerEvent: {}
+[10.346928] (-) TimerEvent: {}
+[10.448966] (-) TimerEvent: {}
+[10.549896] (-) TimerEvent: {}
+[10.653244] (-) TimerEvent: {}
+[10.754936] (-) TimerEvent: {}
+[10.857887] (-) TimerEvent: {}
+[10.958883] (-) TimerEvent: {}
+[11.064277] (-) TimerEvent: {}
+[11.167034] (-) TimerEvent: {}
+[11.269362] (-) TimerEvent: {}
+[11.370916] (-) TimerEvent: {}
+[11.473970] (-) TimerEvent: {}
+[11.556570] (solara_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.576980] (-) TimerEvent: {}
+[11.679239] (-) TimerEvent: {}
+[11.681879] (solara_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[11.685333] (solara_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[11.691502] (solara_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.780086] (-) TimerEvent: {}
+[11.833306] (solara_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[11.880893] (-) TimerEvent: {}
+[11.983938] (-) TimerEvent: {}
+[12.086931] (-) TimerEvent: {}
+[12.188013] (-) TimerEvent: {}
+[12.291040] (-) TimerEvent: {}
+[12.393069] (-) TimerEvent: {}
+[12.496903] (-) TimerEvent: {}
+[12.599927] (-) TimerEvent: {}
+[12.701211] (-) TimerEvent: {}
+[12.803554] (-) TimerEvent: {}
+[12.906135] (-) TimerEvent: {}
+[13.008429] (-) TimerEvent: {}
+[13.110192] (-) TimerEvent: {}
+[13.212914] (-) TimerEvent: {}
+[13.316354] (-) TimerEvent: {}
+[13.418146] (-) TimerEvent: {}
+[13.522654] (-) TimerEvent: {}
+[13.628001] (-) TimerEvent: {}
+[13.731999] (-) TimerEvent: {}
+[13.833952] (-) TimerEvent: {}
+[13.935996] (-) TimerEvent: {}
+[14.037660] (-) TimerEvent: {}
+[14.141211] (-) TimerEvent: {}
+[14.243689] (-) TimerEvent: {}
+[14.346224] (solara_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[14.353052] (-) TimerEvent: {}
+[14.454896] (-) TimerEvent: {}
+[14.558924] (-) TimerEvent: {}
+[14.659910] (-) TimerEvent: {}
+[14.760875] (-) TimerEvent: {}
+[14.862369] (-) TimerEvent: {}
+[14.964294] (-) TimerEvent: {}
+[15.068881] (-) TimerEvent: {}
+[15.142289] (solara_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[15.169870] (-) TimerEvent: {}
+[15.272143] (-) TimerEvent: {}
+[15.374902] (-) TimerEvent: {}
+[15.476231] (-) TimerEvent: {}
+[15.578076] (-) TimerEvent: {}
+[15.680002] (-) TimerEvent: {}
+[15.782255] (-) TimerEvent: {}
+[15.884896] (-) TimerEvent: {}
+[15.943892] (solara_pkg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[15.985908] (-) TimerEvent: {}
+[16.001197] (solara_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[16.003641] (solara_pkg) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[16.011122] (solara_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[16.016766] (solara_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[16.051895] (solara_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[16.088133] (solara_pkg) StdoutLine: {'line': b'-- Configuring done (14.5s)\n'}
+[16.090407] (-) TimerEvent: {}
+[16.192362] (-) TimerEvent: {}
+[16.225635] (solara_pkg) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[16.292937] (-) TimerEvent: {}
+[16.318141] (solara_pkg) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/solara_sim/build/solara_pkg\n'}
+[16.394035] (-) TimerEvent: {}
+[16.496050] (-) TimerEvent: {}
+[16.668317] (-) TimerEvent: {}
+[16.713606] (solara_pkg) CommandEnded: {'returncode': 0}
+[16.770197] (-) TimerEvent: {}
+[16.778487] (solara_pkg) JobProgress: {'identifier': 'solara_pkg', 'progress': 'build'}
+[16.780314] (solara_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/solara_sim/build/solara_pkg', '--', '-j8', '-l8'], 'cwd': '/workspaces/solara_sim/build/solara_pkg', 'env': OrderedDict({'DOCKER_BUILDKIT': '1', 'PYTHON_BASIC_REPL': '1', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': '931affba8b85', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-ca4345b1-9851-40f4-b544-6e0f966db011.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-70f8ff46-c095-42c9-9d24-d67deb81af43.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'UV_USE_IO_URING': '0', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-70f8ff46-c095-42c9-9d24-d67deb81af43.sock"]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-eb882cbef6d0442d.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/58fe105966acf628ca31c6d129db14ec/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-064641725f.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-70f8ff46-c095-42c9-9d24-d67deb81af43.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/solara_sim/build/solara_pkg', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[17.015974] (-) TimerEvent: {}
+[17.119074] (-) TimerEvent: {}
+[17.223945] (-) TimerEvent: {}
+[17.325267] (-) TimerEvent: {}
+[17.427130] (-) TimerEvent: {}
+[17.530943] (-) TimerEvent: {}
+[17.632894] (-) TimerEvent: {}
+[17.734975] (-) TimerEvent: {}
+[17.836001] (-) TimerEvent: {}
+[17.939911] (-) TimerEvent: {}
+[18.040951] (-) TimerEvent: {}
+[18.142193] (-) TimerEvent: {}
+[18.163639] (solara_pkg) CommandEnded: {'returncode': 0}
+[18.178044] (solara_pkg) JobProgress: {'identifier': 'solara_pkg', 'progress': 'install'}
+[18.297999] (-) TimerEvent: {}
+[18.400932] (-) TimerEvent: {}
+[18.617440] (solara_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/solara_sim/build/solara_pkg'], 'cwd': '/workspaces/solara_sim/build/solara_pkg', 'env': OrderedDict({'DOCKER_BUILDKIT': '1', 'PYTHON_BASIC_REPL': '1', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': '931affba8b85', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.108.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-ca4345b1-9851-40f4-b544-6e0f966db011.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-70f8ff46-c095-42c9-9d24-d67deb81af43.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'UV_USE_IO_URING': '0', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/vscode/vscode-server/bin/linux-x64/c9d77990917f3102ada88be140d28b038d1dd7c7/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-70f8ff46-c095-42c9-9d24-d67deb81af43.sock"]', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-eb882cbef6d0442d.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/58fe105966acf628ca31c6d129db14ec/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-064641725f.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-70f8ff46-c095-42c9-9d24-d67deb81af43.sock', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/solara_sim/build/solara_pkg', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[18.630298] (-) TimerEvent: {}
+[18.733003] (-) TimerEvent: {}
+[18.833106] (solara_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.837832] (-) TimerEvent: {}
+[18.840325] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/config\n'}
+[18.862964] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/config/gz_bridge.yaml\n'}
+[18.884667] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description\n'}
+[18.887170] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description/sensors\n'}
+[18.889654] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description/sensors/gps.xacro\n'}
+[18.898721] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description/sensors/lidar.xacro\n'}
+[18.902608] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description/sensors/imu.xacro\n'}
+[18.909730] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description/sensors/ultrasonic.xacro\n'}
+[18.918463] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description/robot.urdf.xacro\n'}
+[18.925239] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description/wheels.xacro\n'}
+[18.936640] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description/gazebo.xacro\n'}
+[18.940683] (-) TimerEvent: {}
+[18.946009] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/description/chassis.xacro\n'}
+[18.958096] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/launch\n'}
+[18.964491] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/launch/gazebo.launch.py\n'}
+[18.973127] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/launch/rviz.launch.py\n'}
+[18.981370] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/worlds\n'}
+[18.984501] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/worlds/garden.sdf\n'}
+[18.995613] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/ament_index/resource_index/package_run_dependencies/solara_pkg\n'}
+[19.005182] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/ament_index/resource_index/parent_prefix_path/solara_pkg\n'}
+[19.020350] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/environment/ament_prefix_path.sh\n'}
+[19.027562] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/environment/ament_prefix_path.dsv\n'}
+[19.036834] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/environment/path.sh\n'}
+[19.040925] (-) TimerEvent: {}
+[19.044479] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/environment/path.dsv\n'}
+[19.055000] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/local_setup.bash\n'}
+[19.062408] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/local_setup.sh\n'}
+[19.068412] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/local_setup.zsh\n'}
+[19.073283] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/local_setup.dsv\n'}
+[19.080433] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/package.dsv\n'}
+[19.090483] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/ament_index/resource_index/packages/solara_pkg\n'}
+[19.103840] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/cmake/solara_pkgConfig.cmake\n'}
+[19.111308] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/cmake/solara_pkgConfig-version.cmake\n'}
+[19.119510] (solara_pkg) StdoutLine: {'line': b'-- Installing: /workspaces/solara_sim/install/solara_pkg/share/solara_pkg/package.xml\n'}
+[19.141901] (-) TimerEvent: {}
+[19.182854] (solara_pkg) CommandEnded: {'returncode': 0}
+[19.243508] (-) TimerEvent: {}
+[19.344871] (-) TimerEvent: {}
+[19.365400] (solara_pkg) JobEnded: {'identifier': 'solara_pkg', 'rc': 0}
+[19.375438] (-) EventReactorShutdown: {}
