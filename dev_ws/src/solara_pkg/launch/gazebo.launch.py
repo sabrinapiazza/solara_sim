@@ -17,7 +17,7 @@ def generate_launch_description():
     # Path to xacro file
     xacro_file = os.path.join(pkg_share, 'description', 'robot.urdf.xacro')
     bridge_config = os.path.join(pkg_share, 'config', 'gz_bridge.yaml')
-    # world_file = os.path.join(pkg_share, 'worlds', 'garden.sdf')
+    world_file = os.path.join(pkg_share, 'worlds', 'swe.sdf')
 
 
     
@@ -34,7 +34,7 @@ def generate_launch_description():
                 'gz_sim.launch.py'
             ])
         ]),
-        launch_arguments={'gz_args': '-r empty.sdf'}.items()
+        launch_arguments={'gz_args': f'-r {world_file}'}.items()
         # SABRINA REMOVE -s before commit
     )
 
