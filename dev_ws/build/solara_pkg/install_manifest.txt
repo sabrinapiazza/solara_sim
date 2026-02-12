@@ -9,6 +9,7 @@
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/chassis.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/gazebo.launch.py
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/rviz.launch.py
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds/swe.sdf
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds/garden.sdf
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/package_run_dependencies/solara_pkg
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/parent_prefix_path/solara_pkg
