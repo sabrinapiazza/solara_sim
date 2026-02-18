@@ -34,7 +34,7 @@ def generate_launch_description():
                 'gz_sim.launch.py'
             ])
         ]),
-        launch_arguments={'gz_args': f'-r {world_file}'}.items()
+        launch_arguments={'gz_args': f'-r -s {world_file}'}.items()
         # SABRINA REMOVE -s before commit
     )
 
