@@ -9,6 +9,7 @@
   <xacro:include filename="$(find solara_pkg)/description/wheels.xacro"/>
   <xacro:include filename="$(find solara_pkg)/description/sensors/imu.xacro"/>
   <xacro:include filename="$(find solara_pkg)/description/sensors/ultrasonic.xacro"/>
+  <xacro:include filename="$(find solara_pkg)/description/sensors/lidar.xacro"/>
   <xacro:include filename="$(find solara_pkg)/description/sensors/gps.xacro"/>
   <xacro:include filename="$(find solara_pkg)/description/gazebo.xacro"/>
   
@@ -36,6 +37,10 @@
   <xacro:gps_sensor parent_link="base_link">
     <origin xyz="0.2 0.1 0.0862" rpy="0 0 0"/>  
   </xacro:gps_sensor> 
+
+  <xacro:lidar_sensor parent_link="base_link">
+    <origin xyz="0.2 0 0.1" rpy="0 0 0"/> 
+  </xacro:lidar_sensor> 
 
 
 
