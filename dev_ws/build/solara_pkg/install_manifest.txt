@@ -1,4 +1,5 @@
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config/gz_bridge.yaml
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config/slam_params.yaml
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/gps.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/lidar.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/imu.xacro
