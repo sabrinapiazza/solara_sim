@@ -5,6 +5,11 @@
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/imu.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/ultrasonic.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/robot.urdf.xacro
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/claw_description/drill.xacro
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/claw_description/shaft.xacro
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/claw_description/gripper.xacro
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/claw_description/claw.urdf.xacro
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/claw_description/base_dummy.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/wheels.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/gazebo.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/chassis.xacro

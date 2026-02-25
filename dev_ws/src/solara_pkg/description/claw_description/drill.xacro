@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="drill_motor_length" value="0.015"/> 
+    <xacro:property name="drill_motor_width" value="0.012"/>    
+    <xacro:property name="drill_motor_height" value="0.010"/>  
+    <xacro:property name="drill_motor_mass" value = "0.009"/>   
+
+    <xacro:property name="drill_spin_length" value= "0.0025"/> 
+    <xacro:property name="drill_spin_diameter" value="0.0092"/>    
+
+
+    <!-- Fixed mount point that connects to your arm's end link -->
+    <xacro:macro name="drill_assembly"  params="parent *origin">
+
+     <joint name="${parent}_to_drill_motor" type="fixed">
+        <parent link="${parent}"/>
+        <child link="drill_motor_link"/>
+        <xacro:insert_block name="origin"/>
+    </joint>
+
+    <link name="drill_motor_link">
+        <!-- Visual representation -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${drill_motor_length} ${drill_motor_width} ${drill_motor_height}"/>
+            </geometry>
+            <material name="blush">
+                <color rgba="0.9 0.4 0.6 1.0"/>
+            </material>
+        </visual>
+
+        <!-- Collision representation -->
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="${drill_motor_width/2}" length="${drill_motor_height}"/>
+            </geometry>
+        </collision>
+
+        <!-- Inertial properties -->
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="${drill_motor_mass}"/>
+            <inertia
+                ixx="${(1/12) * drill_motor_mass * (drill_motor_width*drill_motor_width + drill_motor_height*drill_motor_height)}"
+                ixy="0.0"
+                ixz="0.0"
+                iyy="${(1/12) * drill_motor_mass * (drill_motor_length*drill_motor_length + drill_motor_height*drill_motor_height)}"
+                iyz="0.0"
+                izz="${(1/12) * drill_motor_mass * (drill_motor_length*drill_motor_length + drill_motor_width*drill_motor_width)}"/>
+        </inertial>
+    </link>
+
+    <joint name="drill_motor_to_drill_spin" type="continuous">
+        <parent link="drill_motor_link"/>
+        <child link="drill_spin_link"/>
+        <axis xyz="0 0 1"/>  <!-- rotate around Z axis -->
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+
+     <link name="drill_spin_link">
+        <!-- Visual representation -->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="${drill_spin_diameter/2}" length="${drill_spin_length}"/>
+            </geometry>
+            <material name="chassis_blue">
+                <color rgba="0.2 0.4 0.8 1.0"/>
+            </material>
+        </visual>
+
+        <!-- Collision representation -->
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="${drill_spin_diameter/2}" length="${drill_spin_length}"/>
+            </geometry>
+        </collision>
+
+        <!-- Inertial properties -->
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="${drill_motor_mass}"/>
+            <inertia
+                ixx="${(1/12) * drill_motor_mass * (3 * drill_spin_diameter/2 * drill_spin_diameter/2 + drill_spin_length * drill_spin_length)}"
+                ixy="0.0"
+                ixz="0.0"
+                iyy="${(1/12) * drill_motor_mass * (3 * drill_spin_diameter/2 * drill_spin_diameter/2 + drill_spin_length * drill_spin_length)}"
+                iyz="0.0"
+                izz="${(1/2) * drill_motor_mass * (drill_spin_diameter/2 * drill_spin_diameter/2)}"/>
+        </inertial>
+    </link>
+
+
+ <gazebo reference="drill_motor_link">
+        <visual>
+            <material>
+                <ambient>0.9 0.4 0.6 1.0</ambient>
+                <diffuse>0.9 0.4 0.6 1.0</diffuse>
+                <specular>1.0 0.2 0.6 1.0</specular>
+            </material>
+        </visual>
+    </gazebo>
+
+    </xacro:macro>
+</robot>
