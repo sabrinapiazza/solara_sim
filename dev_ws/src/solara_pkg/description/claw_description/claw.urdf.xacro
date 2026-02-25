@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="solara_claw" xmlns:xacro="http://ros.org/wiki/xacro">
+
+<xacro:include filename="$(find solara_pkg)/description/claw_description/base_dummy.xacro"/>
+<xacro:include filename="$(find solara_pkg)/description/claw_description/shaft.xacro"/>
+<xacro:include filename="$(find solara_pkg)/description/claw_description/gripper.xacro"/>
+<xacro:include filename="$(find solara_pkg)/description/claw_description/drill.xacro"/>
+
+
+
+<xacro:shaft_motor parent="base_link">
+    <origin xyz="0.2 0 0.1" rpy="0 0 0"/> 
+</xacro:shaft_motor> 
+
+<xacro:adaptive_gripper parent="claw_mount_link">
+    <origin xyz="0.2 0 0.1" rpy="0 0 0"/> 
+  </xacro:adaptive_gripper> 
+
+<xacro:drill_assembly parent="drill_mount_link">
+    <origin xyz="0.2 0 0.1" rpy="0 0 0"/> 
+  </xacro:drill_assembly> 
+
+
+
+</robot>

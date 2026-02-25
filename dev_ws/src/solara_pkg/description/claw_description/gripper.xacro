@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:property name="joint_effort" value="56.0"/>
+  <xacro:property name="joint_velocity" value="2.792527"/>
+  <xacro:property name="joint_damping" value="0.0"/>
+  <xacro:property name="joint_friction" value="0.0"/>
+
+  <xacro:property name="gripper_link_mass" value="0.007"/>
+  <xacro:property name="gripper_link_ixx" value="1e-6"/>
+  <xacro:property name="gripper_link_iyy" value="1e-6"/>
+  <xacro:property name="gripper_link_izz" value="1e-6"/>
+
+  <xacro:macro name="gripper_link_inertial">
+    <inertial>
+      <origin xyz="0 0 0.0" rpy="0 0 0"/>
+      <mass value="${gripper_link_mass}"/>
+      <inertia
+        ixx="${gripper_link_ixx}" ixy="0.0" ixz="0.0"
+        iyy="${gripper_link_iyy}" iyz="0.0"
+        izz="${gripper_link_izz}"/>
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="adaptive_gripper" params="parent *origin">
+  <!-- confirm parent link so i can attatch it to the side of the shaft motor  -->
+
+    <link name="gripper_base">
+      <inertial>
+        <origin xyz="0 0 0.0" rpy="0 0 0"/>
+        <mass value="0.07"/>
+        <inertia
+          ixx="0.000010725" ixy="0.0" ixz="0.0"
+          iyy="0.000014392" iyz="0.0"
+          izz="0.000018517"/>
+      </inertial>
+      <visual>
+        <geometry>
+            <box size="0.062 0.062 0.031"/>
+        </geometry>
+        <origin xyz="0.0 0.0 -0.012" rpy="0 0 0"/>
+        <material name="hot_pink">
+            <color rgba="1.0 0.2 0.6 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.062 0.062 0.0315"/>
+        </geometry>
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+      </collision>
+    </link>
+
+   
+    <joint name="${parent}_to_gripper_base" type="fixed">
+      <parent link="${parent}"/>
+      <child link="gripper_base"/>
+      <xacro:insert_block name="origin"/>
+    </joint>
+
+ 
+    <link name="gripper_left1">
+      <xacro:gripper_link_inertial/>
+      <visual>
+        <geometry>
+          <box size="0.01 0.06 0.005"/>
+        </geometry>
+        <origin xyz="0.039 -0.0133 -0.012" rpy="0 0 0"/>
+        <material name="hot_pink">
+            <color rgba="1.0 0.2 0.6 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.01 0.06 0.005"/>
+        </geometry>
+        <origin xyz="0.013 0.042 -0.010" rpy="0 0 0"/>
+      </collision>
+    </link>
+
+
+    <link name="gripper_right1">
+      <xacro:gripper_link_inertial/>
+      <visual>
+        <geometry>
+          <box size="0.01 0.06 0.005"/>
+        </geometry>
+        <origin xyz="-0.039 -0.0133 -0.012" rpy="0 0 0"/>
+        <material name="hot_pink">
+            <color rgba="1.0 0.2 0.6 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.01 0.06 0.005"/>
+        </geometry>
+        <origin xyz="-0.013 0.042 -0.010" rpy="0 0 0"/>
+      </collision>
+    </link>
+
+    <joint name="gripper_controller" type="revolute">
+        <axis xyz="0 0 1"/>
+        <limit effort="${joint_effort}" lower="-0.7" upper="0.15" velocity="${joint_velocity}"/>
+        <parent link="gripper_base"/>
+        <child link="gripper_left1"/>
+        <origin xyz="-0.012 0.005 0" rpy="0 0 0"/>
+        <dynamics damping="${joint_damping}" friction="${joint_friction}"/>
+    </joint>
+
+    <joint name="gripper_base_to_gripper_right1" type="revolute">
+      <axis xyz="0 0 1"/>
+      <limit effort="${joint_effort}" lower="-0.7" upper="0.15" velocity="${joint_velocity}"/>
+      <parent link="gripper_base"/>
+      <child link="gripper_right1"/>
+      <origin xyz="0.012 0.005 0" rpy="0 0 0"/>
+      <mimic joint="gripper_controller" multiplier="-1.0" offset="0"/>
+      <dynamics damping="${joint_damping}" friction="${joint_friction}"/>
+    </joint>
+
+
+    <gazebo reference="gripper_base">
+      <visual>
+        <material>
+          <ambient>1.0 0.2 0.6 1.0</ambient>
+          <diffuse>1.0 0.2 0.6 1.0</diffuse>
+          <specular>1 1 1 1</specular>
+        </material>
+      </visual>
+    </gazebo>
+
+  </xacro:macro>
+</robot>
