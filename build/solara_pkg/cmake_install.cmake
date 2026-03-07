@@ -47,6 +47,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "/workspaces/solara_sim/dev_ws/src/solara_pkg/config"
     "/workspaces/solara_sim/dev_ws/src/solara_pkg/description"
     "/workspaces/solara_sim/dev_ws/src/solara_pkg/launch"
+    "/workspaces/solara_sim/dev_ws/src/solara_pkg/maps"
     "/workspaces/solara_sim/dev_ws/src/solara_pkg/worlds"
     )
 endif()
