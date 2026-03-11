@@ -1,0 +1,18 @@
+digraph G {
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 10.222\nBuffer length: 4.5\nMost recent transform: 306.8\nOldest transform: 302.3\n"];
+"base_link" -> "gps_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 50.27\nBuffer length: 3.7\nMost recent transform: 306.64\nOldest transform: 302.94\n"];
+"base_link" -> "imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "lidar_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "ultrasonic_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "front_left_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 20.27\nBuffer length: 3.7\nMost recent transform: 306.65\nOldest transform: 302.95\n"];
+"base_link" -> "front_right_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 20.27\nBuffer length: 3.7\nMost recent transform: 306.65\nOldest transform: 302.95\n"];
+"base_link" -> "middle_left_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 20.27\nBuffer length: 3.7\nMost recent transform: 306.65\nOldest transform: 302.95\n"];
+"base_link" -> "middle_right_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 20.27\nBuffer length: 3.7\nMost recent transform: 306.65\nOldest transform: 302.95\n"];
+"base_link" -> "rear_left_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 20.27\nBuffer length: 3.7\nMost recent transform: 306.65\nOldest transform: 302.95\n"];
+"base_link" -> "rear_right_wheel_link"[label=" Broadcaster: default_authority\nAverage rate: 20.27\nBuffer length: 3.7\nMost recent transform: 306.65\nOldest transform: 302.95\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1772480598.3408515"[ shape=plaintext ] ;
+}->"map";
+}

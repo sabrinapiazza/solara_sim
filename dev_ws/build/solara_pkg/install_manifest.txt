@@ -1,5 +1,6 @@
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config/gz_bridge.yaml
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config/slam_params.yaml
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/config/nav2_params.yaml
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/gps.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/lidar.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/sensors/imu.xacro
@@ -13,8 +14,12 @@
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/wheels.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/gazebo.xacro
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/description/chassis.xacro
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/nav2.launch.py
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/gazebo.launch.py
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/launch/rviz.launch.py
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/maps/rgarden_map.yaml
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/maps/rgarden_map.pgm
+/workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/maps/rgarden_map.png
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds/swe.sdf
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/solara_pkg/worlds/garden.sdf
 /workspaces/solara_sim/dev_ws/install/solara_pkg/share/ament_index/resource_index/package_run_dependencies/solara_pkg
